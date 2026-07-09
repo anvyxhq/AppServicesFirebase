@@ -7,17 +7,17 @@ let package = Package(
         .iOS(.v17)
     ],
     products: [
-        .library(name: "AppServicesFirebase", targets: ["AppServicesFirebase"]),
+        .library(name: "AnvyxServiceFirebaseKit", targets: ["AnvyxServiceFirebaseKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/anvyxhq/AppServices.git", from: "2.0.0"),
+        .package(url: "https://github.com/anvyxhq/AppServices.git", branch: "main"),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "11.0.0"),
     ],
     targets: [
         .target(
-            name: "AppServicesFirebase",
+            name: "AnvyxServiceFirebaseKit",
             dependencies: [
-                .product(name: "AppServices", package: "AppServices"),
+                .product(name: "AnvyxServiceKit", package: "AppServices"),
                 .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
                 .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk"),
             ]

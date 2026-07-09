@@ -5,7 +5,7 @@
 //  Created by AnhPT on 02/07/2026.
 //
 
-import AppServices
+import AnvyxServiceKit
 import FirebaseRemoteConfig
 
 /// `RemoteConfigService` backed by Firebase Remote Config. Requires
